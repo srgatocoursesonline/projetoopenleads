@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLeads Strategy - Especialistas em Geração de Leads B2B</title>
+    <meta name="description" content="Agência especializada em soluções B2B de geração de leads, OSINT e estratégias digitais avançadas">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip Link para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#" aria-label="OpenLeads Strategy - Página Inicial">
+                        <h1>OpenLeads Strategy</h1>
+                    </a>
+                </div>
+                
+                <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                
+                <nav id="primary-navigation" class="primary-navigation">
+                    <ul class="menu">
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#casos-sucesso">Casos de Sucesso</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#agendar" class="btn btn--primary">Agendar Consultoria</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Transforme dados em estratégias. Estratégias em resultados.</h2>
+                        <p>Especializada em soluções B2B de geração de leads, OSINT (Open Source Intelligence) e estratégias digitais avançadas para empresas que buscam crescimento baseado em dados.</p>
+                        <a href="#agendar" class="btn btn--primary">Agendar Consultoria Gratuita</a>
+                    </div>
+                    
+                    <div class="hero-form">
+                        <div class="card">
+                            <h3>Contato Rápido</h3>
+                            <form id="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <div class="error-message" id="name-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Corporativo</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                    <div class="error-message" id="email-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Empresa</label>
+                                    <input type="text" id="company" name="company" class="form-control" required>
+                                    <div class="error-message" id="company-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea id="message" name="message" class="form-control" rows="3"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="performance-graph">
+                    <h3>Performance Média dos Nossos Clientes</h3>
+                    <div class="graph-container">
+                        <canvas id="performanceChart" aria-label="Gráfico de performance dos clientes" role="img"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Serviços -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header2">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções estratégicas para transformar seu negócio B2B</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        </div>
+                        <h3>Geração de Leads B2B</h3>
+                        <p>Estratégias personalizadas para identificar e converter prospects qualificados através de dados inteligentes e automação avançada.</p>
+                        <a href="#" class="btn btn--secondary">Saiba mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </div>
+                        <h3>OSINT - Open Source Intelligence</h3>
+                        <p>Coleta e análise de dados de fontes abertas para insights estratégicos sobre mercado, concorrência e oportunidades.</p>
+                        <a href="#" class="btn btn--secondary">Saiba mais</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Estratégias Digitais Avançadas</h3>
+                        <p>Desenvolvimento de campanhas multicanal baseadas em dados para maximizar ROI e acelerar crescimento empresarial.</p>
+                        <a href="#" class="btn btn--secondary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Casos de Sucesso -->
+        <section id="casos-sucesso" class="case-studies-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Casos de Sucesso</h2>
+                    <p>Resultados comprovados para empresas B2B</p>
+                </div>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-header">
+                            <h3>Empresa de Tecnologia</h3>
+                            <p class="challenge">Desafio: Aumentar leads qualificados B2B</p>
+                        </div>
+                        <div class="case-body">
+                            <p class="solution">Solução: Implementação de OSINT + Automação</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-value">340%</span>
+                                    <span class="result-label">Aumento de Leads</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">28%</span>
+                                    <span class="result-label">Taxa de Conversão</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">420%</span>
+                                    <span class="result-label">ROI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-header">
+                            <h3>Consultoria Empresarial</h3>
+                            <p class="challenge">Desafio: Identificar decisores-chave</p>
+                        </div>
+                        <div class="case-body">
+                            <p class="solution">Solução: Estratégia OSINT personalizada</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-value">94%</span>
+                                    <span class="result-label">Precisão de Alvo</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">67%</span>
+                                    <span class="result-label">Taxa de Engajamento</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">-45%</span>
+                                    <span class="result-label">Ciclo de Vendas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-header">
+                            <h3>Software B2B</h3>
+                            <p class="challenge">Desafio: Escalar geração de leads</p>
+                        </div>
+                        <div class="case-body">
+                            <p class="solution">Solução: Automação inteligente multicanal</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-value">280%</span>
+                                    <span class="result-label">Volume de Leads</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">-52%</span>
+                                    <span class="result-label">Custo por Lead</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">89%</span>
+                                    <span class="result-label">Score de Qualidade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <h3>O que nossos clientes dizem</h3>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <blockquote>
+                                <p>"A OpenLeads revolucionou nossa estratégia de prospecção. Os resultados superaram todas as expectativas."</p>
+                                <footer>
+                                    <cite>
+                                        <span class="author">João Silva</span>
+                                        <span class="position">Diretor Comercial, TechCorp</span>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <blockquote>
+                                <p>"O OSINT implementado pela equipe nos deu vantagem competitiva decisiva no mercado."</p>
+                                <footer>
+                                    <cite>
+                                        <span class="author">Maria Santos</span>
+                                        <span class="position">CEO, InnovaBiz</span>
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sobre a Empresa -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="section-header2">
+                    <h2>Sobre a OpenLeads Strategy</h2>
+                    <p>Excelência em inteligência de dados e geração de leads B2B</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Nossa Missão</h3>
+                        <p>Capacitar empresas B2B com estratégias de geração de leads baseadas em dados e inteligência de fontes abertas, garantindo resultados mensuráveis e escaláveis.</p>
+                        
+                        <h3>Nossa Expertise</h3>
+                        <p>Com mais de 10 anos de experiência em marketing digital B2B, nossa equipe multidisciplinar combina conhecimento técnico avançado em OSINT, automação de marketing e análise de dados para criar soluções customizadas para cada cliente.</p>
+                        
+                        <h3>Diferencial Competitivo</h3>
+                        <p>Nossa metodologia proprietária de OSINT aplicada a negócios B2B permite identificar oportunidades invisíveis para métodos tradicionais, gerando leads altamente qualificados e reduzindo o ciclo de vendas.</p>
+                    </div>
+                    
+                    <div class="about-certifications">
+                        <h3>Certificações e Parcerias</h3>
+                        <ul class="certifications-list">
+                            <li>Google Partners Premier</li>
+                            <li>HubSpot Platinum Partner</li>
+                            <li>LinkedIn Marketing Solutions Partner</li>
+                            <li>Salesforce Certified Consultants</li>
+                            <li>Data Ethics Certification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contato e Agendamento -->
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos prontos para transformar sua estratégia de geração de leads</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:contato@openleadsstrategy.com">contato@openleadsstrategy.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+551199998888">+55 11 9999-8888</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>São Paulo, SP - Brasil</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="agendar" class="schedule-consultation">
+                        <div class="card">
+                            <h3>Agende uma Consultoria Gratuita</h3>
+                            <form id="schedule-form" novalidate>
+                                <div class="form-group">
+                                    <label for="schedule-name" class="form-label">Nome</label>
+                                    <input type="text" id="schedule-name" name="name" class="form-control" required>
+                                    <div class="error-message" id="schedule-name-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="schedule-email" class="form-label">Email Corporativo</label>
+                                    <input type="email" id="schedule-email" name="email" class="form-control" required>
+                                    <div class="error-message" id="schedule-email-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="schedule-company" class="form-label">Empresa</label>
+                                    <input type="text" id="schedule-company" name="company" class="form-control" required>
+                                    <div class="error-message" id="schedule-company-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="schedule-phone" class="form-label">Telefone</label>
+                                    <input type="tel" id="schedule-phone" name="phone" class="form-control" required>
+                                    <div class="error-message" id="schedule-phone-error"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="schedule-message" class="form-label">Principais desafios</label>
+                                    <textarea id="schedule-message" name="message" class="form-control" rows="3"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn--primary btn--full-width">Agendar Consultoria</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>OpenLeads Strategy</h2>
+                    <p>Transforme dados em estratégias. Estratégias em resultados.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#casos-sucesso">Casos de Sucesso</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Nossos Serviços</h3>
+                    <ul>
+                        <li><a href="#">Geração de Leads B2B</a></li>
+                        <li><a href="#">OSINT</a></li>
+                        <li><a href="#">Estratégias Digitais</a></li>
+                        <li><a href="#">Automação de Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="mailto:contato@openleadsstrategy.com">contato@openleadsstrategy.com</a></li>
+                        <li><a href="tel:+551199998888">+55 11 9999-8888</a></li>
+                        <li>São Paulo, SP - Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 OpenLeads Strategy. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
